@@ -186,7 +186,7 @@ sed -i "s|CURRENT_OSA_VERSION|${CURRENT_OSA_VERSION}|g" /usr/local/bin/openstack
 
 # Create an auto-completion script
 mkdir -p /etc/bash_completion.d
-cp --parents -v scripts/bash-completion /etc/bash_completion.d/openstack-ansible
+cp -v scripts/bash-completion /etc/bash_completion.d/openstack-ansible
 
 # Ensure wrapper tool is executable
 chmod +x /usr/local/bin/openstack-ansible
